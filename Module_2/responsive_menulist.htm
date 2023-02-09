@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiv Menu-list</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .vegitables {
+            margin-left: 22px;
+            float: left;
+            width: 160px;
+            background-color: palevioletred;
+            text-align: left;
+            font-size: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-left: 5px;
+            height: 25px;
+            padding-top: 3px;
+        }
+
+        .rate {
+            background-color: palevioletred;
+            text-align: left;
+            font-size: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-left: 5px;
+            margin-left: 400px;
+            width: 100px;
+            height: 25px;
+            padding-top: 3px;
+        }
+
+        .media {
+            color: blue;
+            line-height: 30px;
+            width: 200px;
+        }
+
+
+        @media screen and (max-width:400px) {
+            .media {
+                color: red;
+                display: inline;
+            }
+
+            .media li {
+                display: inline-block;
+            }
+        }
+
+        @media screen and (max-height:400px) {
+            .media {
+                color: red;
+                display: inline;
+            }
+
+            .media li {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="vegitables">VEGETABLES
+            <ul class="media">
+                <li>MIX VEG</li>
+                <li>ALOO SUBZI</li>
+                <li>SUKHI BHAJI</li>
+                <li>ALOO LASANIYA</li>
+                <li>ALOO MUTTER</li>
+                <li>ALOO GOBI</li>
+                <li>ALOO TAMATO</li>
+                <li>SEV TAMATO</li>
+                <li>TAMATO</li>
+                <li>MUTTER GOBI</li>
+                <li>CHAPATI</li>
+            </ul>
+        </div>
+        <div class="rate">RATE
+            <ul class="media">
+                <li>120</li>
+                <li>90</li>
+                <li>90</li>
+                <li>95</li>
+                <li>90</li>
+                <li>90</li>
+                <li>95</li>
+                <li>100</li>
+                <li>90</li>
+                <li>90</li>
+                <li>10</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

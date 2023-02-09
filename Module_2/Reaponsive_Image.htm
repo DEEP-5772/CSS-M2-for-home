@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox gallary Image</title>
+  <style>
+    img {
+      height: 250px;
+      width: 90%;
+      padding: 10px;
+    }
+
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .row {
+      display: flex;
+      padding: 0 4px;
+      width: 99%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    @media (max-width:600px) {
+      .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+      }
+
+      .column{
+        flex: 50%;
+        max-width: 50%;
+      }
+
+      img {
+        height: 100px;
+      }
+    }
+
+    @media (max-width:400px) {
+      .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+      }
+
+      img {
+        height: 90px;
+      }
+    }
+
+    @media (max-width:200px) {
+      .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+      }
+
+      img {
+        height: 50px;
+      }
+    }
+
+
+    @media (max-height:600px) {
+      .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+      }
+
+      img {
+        height: 140px;
+      }
+    }
+
+    @media (max-height:400px) {
+      .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+      }
+
+      img {
+        height: 90px;
+      }
+    }
+
+    @media (max-height:300px) {
+      .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+      }
+
+      img {
+        height: 60px;
+        width: 70px;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="column">
+      <div><img src="./Space /image1.jpeg" /></div>
+      <div><img src="./Space /Image2.jpeg" /></div>
+      <div><img src="./Space /image3.jpeg" /></div>
+    </div>
+    <div class="column">
+      <div><img src="./Space /image4.jpeg" /></div>
+      <div><img src="./Space /Image5.jpeg" /></div>
+      <div><img src="./Space /Image6.jpeg" /></div>
+    </div>
+    <div class="column">
+      <div><img src="./Space /Image7.jpeg" /></div>
+      <div><img src="./Space /Image8.jpeg" /></div>
+      <div><img src="./Space /Image9.jpeg" /></div>
+    </div>
+    <div class="column">
+      <div><img src="./Space /Image10.jpeg" /></div>
+      <div><img src="./Space /Image11.jpeg" /></div>
+      <div><img src="./Space /Image12.jpeg" /></div>
+    </div>
+  </div>
+</body>
+
+</html>
