@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_4</title>
+    <style>
+        .div1{
+            margin-left: 15px;
+        }
+        
+        .div2{
+            margin-left: 30px;
+        }
+
+        .div3{
+            margin-left: 45px;
+        }
+
+        .static{
+            position: static;
+            left: 50px;
+        }
+
+        .relative{
+            position: relative;
+            left: 100px;
+        }
+
+        .absolute{
+            position: absolute;
+            border: 2px solid black;
+            left: 100px;
+        }
+
+        .relative1{
+            position: relative;
+            border: 4px solid green;
+            height: 100px;
+            left: 10px;
+        }
+
+        .fix{
+            position: fixed;
+            line-height: 70px;
+        }
+
+        .auto {
+            height: 110px;
+            width: 110px;
+            background-color: pink;
+            overflow: auto;
+        }
+
+        .hiddenk{
+            height: 110px;
+            width: 110px;
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        .scroll{
+            height: 110px;
+            width: 110px;
+            background-color: pink;
+            overflow:scroll;
+        }
+
+        .visible{
+            height: 110px;
+            width: 110px;
+            background-color: pink;
+            overflow:visible;
+        }
+
+        .clip{
+            height: 110px;
+            width: 110px;
+            background-color: pink;
+            overflow:clip;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <p>This is parent div</p>
+        <div>
+            <p class="div1">This is first div inside parent div</p>
+            <div>
+                <p class="div2">This is second div inside parent div</p>
+                <div>
+                    <p class="div3">This is third div inside parent div</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <p class="static">This is a static line</p>
+    
+    <p class="relative">This is relative line </p>
+    
+    <div class="relative1">This is relative line with absolute line 
+        <div class="absolute"> This is absolute position line</div>
+    </p>
+
+</br></br></br></br></br></br>
+
+
+    <p class="auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla at suscipit saepe tenetur repellendus obcaecati harum unde, deleniti inventore similique exercitationem dolor explicabo repudiandae aliquam aliquid eaque dolorum beatae cupiditate.</p>
+
+    <p class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi labore amet, cupiditate accusantium quisquam sapiente exercitationem excepturi vitae veniam cum. Quasi facilis quo fuga rerum cumque commodi quidem ex.</p>
+
+    <p class="hiddenk">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla at suscipit saepe tenetur repellendus obcaecati harum unde, deleniti inventore similique exercitationem dolor explicabo repudiandae aliquam aliquid eaque dolorum beatae cupiditate.</p>
+
+
+
+    <p class="clip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla at suscipit saepe tenetur repellendus obcaecati harum unde, deleniti inventore similique exercitationem dolor explicabo repudiandae aliquam aliquid eaque dolorum beatae cupiditate.</p>
+
+    <p class="visible">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla at suscipit saepe tenetur repellendus obcaecati harum unde, deleniti inventore similique exercitationem dolor explicabo repudiandae aliquam aliquid eaque dolorum beatae cupiditate.</p>
+
+</body> 
+
+</html>
